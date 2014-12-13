@@ -3,6 +3,6 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
 	model: function() {
-		this.store.find("car");
+		return this.store.find("car");
 	}
 });
