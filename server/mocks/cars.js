@@ -8,14 +8,14 @@ module.exports = function(app) {
               
 			{
 				"owner":"ram",
-				"car":"car1",
+				"id":"car1",
 				"passengers":[
 								"harishyam"
 							 ]
 			},
 			{
 				"owner":"shyam",
-				"car":"car2",
+				"id":"car2",
 				"passengers":[
 								"hari"
 							 ]
