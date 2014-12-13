@@ -1,1 +1,25 @@
 Display a list of cars
+
+<table>
+	<thead>
+		
+	</thead>
+	<tbody>
+		{{#each content}}
+			<tr>
+				<td>{{id}}</td>
+				<td>{{owner}}</td>
+				<td>
+					{{#each passengers}}
+						{{id}}|{{email}}
+						<br>
+					{{/each}}
+				</td>
+			</tr>
+		{{else}}
+			<tr>
+				<td colspan="20">Sorry, no cars at the moment</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
