@@ -4,7 +4,23 @@ module.exports = function(app) {
 
   carsRouter.get('/', function(req, res) {
     res.send({
-      "cars": []
+      "cars": [
+              
+			{
+				"owner":"ram",
+				"car":"car1",
+				"passengers":[
+								"harishyam"
+							 ]
+			},
+			{
+				"owner":"shyam",
+				"car":"car2",
+				"passengers":[
+								"hari"
+							 ]
+			}
+        ]
     });
   });
 
