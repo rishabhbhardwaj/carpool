@@ -7,7 +7,7 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     googleMap: {
-      key: 'AbCDeFgHiJkLmNoPqRsTuVwXyZ'
+      key: 'AIzaSyD8eP15tD9C2PbHGa1nElw1IKjiWxUJwNQ'
     },
     EmberENV: {
       FEATURES: {
