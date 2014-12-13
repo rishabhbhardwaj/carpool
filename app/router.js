@@ -8,7 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
     this.resource('users', function() {
         this.route('new');
-        this.resource(':id', function() {
+        this.resource('user', ':id', function() {
             this.resource('route', function() {
                 this.route('new');
             });
@@ -17,6 +17,8 @@ Router.map(function() {
     this.resource('route', function() {
         this.route('car');
     });
+    this.route('users/new');
+    this.route('route/car');
 });
 
 export
