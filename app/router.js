@@ -17,8 +17,6 @@ Router.map(function() {
     this.resource('route', function() {
         this.route('car');
     });
-    this.route('users/new');
-    this.route('route/car');
 });
 
 export
