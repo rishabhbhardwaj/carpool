@@ -2,25 +2,24 @@ module.exports = function(app) {
   var express = require('express');
   var carsRouter = express.Router();
 
+  var dataSet = [{
+        "owner":"ram",
+        "id":"car1",
+        "passengers":[
+                "harishyam"
+               ]
+      },
+      {
+        "owner":"shyam",
+        "id":"car2",
+        "passengers":[
+                "hari"
+               ]
+      }];
+
   carsRouter.get('/', function(req, res) {
     res.send({
-      "cars": [
-              
-			{
-				"owner":"ram",
-				"id":"car1",
-				"passengers":[
-								"harishyam"
-							 ]
-			},
-			{
-				"owner":"shyam",
-				"id":"car2",
-				"passengers":[
-								"hari"
-							 ]
-			}
-        ]
+      "cars": dataSet
     });
   });
 
@@ -30,9 +29,7 @@ module.exports = function(app) {
 
   carsRouter.get('/:id', function(req, res) {
     res.send({
-      "cars": {
-        "id": req.params.id
-      }
+      "cars": dataSet.filter(function(car) { return car.id == req.params.id; })[0] || {}
     });
   });
 

@@ -7,7 +7,9 @@ Display a list of cars
 	<tbody>
 		{{#each model}}
 			<tr>
-				<td>{{id}}</td>
+				<td>
+					{{#link-to "results.car" this}}{{id}}{{/link-to}}
+				</td>
 				<td>{{owner.id}} | {{owner.email}}</td>
 				<td>
 					{{#each passengers}}

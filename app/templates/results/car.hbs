@@ -1,1 +1,13 @@
 We want to show a particular car's details
+
+<br />
+
+{{id}}
+{{owner.id}}
+{{owner.email}}
+
+<ul>
+{{#each passengers}}
+	<li>{{id}} | {{email}}</li>
+{{/each}}
+</ul>
